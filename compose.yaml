@@ -1,0 +1,23 @@
+services:
+  backend-read-db:
+    image: ravendb/ravendb:ubuntu-latest
+    container_name: raven1
+    ports:
+      - 8081:8080
+      - 38881:38888
+    environment:
+      - RAVEN_ARGS=--Setup.Mode=None
+      - RAVEN_Logs_Mode=Information
+      - RAVEN_Security_UnsecuredAccessAllowed=PublicNetwork
+      - RAVEN_PublicServerUrl=http://raven1:8080
+      - RAVEN_PublicServerUrl_Tcp=tcp://raven1:38888
+      - RAVEN_License_Eula_Accepted=true
+    env_file: ./license.env
+  backend-write-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql1
+    ports:
+     - 1433:1433
+    environment:
+     - ACCEPT_EULA=Y
+     - MSSQL_SA_PASSWORD=2qwkUDSYSPnsabbw
