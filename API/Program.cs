@@ -1,5 +1,6 @@
 using Domain;
 using MediatR;
+using Persistance;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.RegisterMediatR();
+
+builder.Services.RegisterPersistance();
 
 var app = builder.Build();
 

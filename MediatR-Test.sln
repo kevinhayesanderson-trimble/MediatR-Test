@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatR-Test", "MediatR-Test.csproj", "{6E0409F3-2CE6-4BC5-A109-9C4E4A14169A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatR-Test", "API\MediatR-Test.csproj", "{6E0409F3-2CE6-4BC5-A109-9C4E4A14169A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{6990DC2C-7272-4D46-9E09-3DF7A17E6DD9}"
 EndProject

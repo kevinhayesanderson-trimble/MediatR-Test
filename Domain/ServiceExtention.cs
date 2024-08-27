@@ -2,13 +2,13 @@
 
 namespace Domain
 {
-    internal static class ServiceExtention
+    public static class ServiceExtension
     {
         public static IServiceCollection RegisterMediatR(this IServiceCollection serviceCollection)
         {
             return serviceCollection.AddMediatR(cfg =>
             {
-                cfg.RegisterServicesFromAssembly(typeof(ServiceExtention).Assembly);
+                cfg.RegisterServicesFromAssembly(typeof(ServiceExtension).Assembly);
             });
         }
     }

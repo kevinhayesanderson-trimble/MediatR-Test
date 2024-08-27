@@ -2,7 +2,7 @@
 
 namespace Persistance
 {
-    public static class ServicesExtention
+    public static class ServiceExtension
     {
         public static IServiceCollection RegisterPersistance(this IServiceCollection serviceCollection)
         {
